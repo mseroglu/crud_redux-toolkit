@@ -45,7 +45,7 @@ const crudSlice = createSlice({
             // const filtrered=state.tasks.filter((item)=> item.id !== payload)
             // state.tasks = filtrered
             const i = state.tasks.findIndex((i) => i.id === payload)
-            state.tasks.splice(i, 1, payload)
+            state.tasks.splice(i, 1)
         },
         editTask: (state, { payload }) => {
 
